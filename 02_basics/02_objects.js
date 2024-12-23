@@ -30,6 +30,27 @@ myObj.age=20;
 
 //if we dont want to change the values =>freeze
 
-Object.freeze(myObj);
+//Object.freeze(myObj);
 //abh change kro nahi hoga
 console.log(myObj);
+
+
+const greet=function()
+{
+    console.log("I am suya");
+    
+}
+console.log(greet);//[Function: greet]
+console.log(greet());
+//I am suya
+//undefined
+
+
+const funn=function()
+{
+    console.log(`Hello i am,${this.name}`);
+    
+}
+console.log(funn());
+//Hello i am,undefined
+//undefined
