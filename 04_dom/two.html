@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | Suyash</title>
+</head>
+<body style="background-color: #212121;color:#fff">
+   <div class ="parent">
+    <div class="day">Monday</div>
+    <div class="day">tues</div>
+    <div class="day">wed</div>
+    <div class="day">thurs</div>
+</div>
+</body>
+<script>
+    const Parent=document.querySelector('.parent')
+    console.log(Parent);
+    console.log(Parent.children);
+    let HTMLC=Parent.children
+    console.log(HTMLC);
+   HTMLC= Array.from(HTMLC)
+    console.log(HTMLC);
+    console.log(HTMLC[0]);
+    console.log(HTMLC[0].innerHTML);
+    HTMLC.forEach(element => {
+        console.log(element.innerHTML);
+        
+    });
+   console.log(HTMLC[0].style.color="orange");
+    //dont do log as "orange" display on o/p screen
+    // console.log(Parent.ATTRIBUTE_NODE.innerHTML);//2 => undefined
+    // console.log(Parent.firstElementChild);
+    console.log();
+    const dayOne=document.querySelector('.day');
+    // console.log(dayOne.parentElement);
+    // console.log(dayOne.nextElementSibling);
+   // console.log(dayOne.nextSibling);
+   console.log("Nodes: ",parent.childNodes);//9
+   
+
+
+    
+    
+    
+</script>
+</html>
