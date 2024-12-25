@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suya</title>
+</head>
+<body style="background-color: #212121;color:#fff">
+    
+</body>
+<script>
+    //create element
+   const div= document.createElement('div')
+   console.log(div);
+   div.className="main"
+   div.id='99'
+   //setting custom attributes
+   div.setAttribute("title","dahitule")
+   div.style.backgroundColor="green"
+   div.style.padding="20px"
+    //div.innerHTML="Chai aur code"
+
+
+    //create textnode
+    const addText=document.createTextNode("Chai aur Code")
+    //add textnode to div
+    div
+    div.appendChild(addText)
+
+    //abh body ke andar add div
+    //document=>body=>appendChild=>
+    document.body.appendChild(div)
+    /**
+     * we prefer 
+     *   .setAtrribute over manually bcz manually overrides 
+     *  .set direct assign
+     */
+   //ban toh gaya par page pr display nhi
+   //attaching
+
+</script>
+</html>
+
+/*
+wrap in function
+argumnet mein text backgroundColor
+loop
+*/
