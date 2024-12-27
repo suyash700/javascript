@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai aur Suyash</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+    
+
+</body>
+<script>
+ //setInterval
+//  const sayName=function(str)
+//  {
+//     console.log(str,Date.now());
+    
+//  }
+//  const Clear=setInterval(sayName,3000,"hii")
+//  clearInterval(Clear)
+//  console.log("kyunn");
+
+//click start print suyash
+//click stop stop the event
+
+    let suya;
+ 
+    document.querySelector("#start").addEventListener('click',function()
+{
+   suya= setInterval(Start,1000)
+    
+})
+function Start()
+    {
+        console.log("Suyash",Date.now());
+    }
+
+document.querySelector("#stop").addEventListener('click',function()
+{
+    clearInterval(suya)
+    
+})
+  
+
+
+
+
+
+ 
+  
+
+
+</script>
+</html>
