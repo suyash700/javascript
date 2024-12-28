@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color:#212121">
+    
+</body>
+<script>
+    const reqUrl="https://api.randomuser.me/"
+    const xmr=new XMLHttpRequest()
+    xmr.open("GET",reqUrl)
+    //calling open()
+    xmr.onreadystatechange= function()
+    {
+        console.log(xmr.readyState);
+        if(xmr.readyState===4)
+    {//current context=>this.
+        let data=this.responseText
+        console.log(data);
+        console.log(typeof data);
+   //when we get response from the url  it is in string format
+
+//to convert string to object as data is in json 
+
+        data=JSON.parse(this.responseText)
+        console.log(typeof data);
+
+
+
+      console.log(data.info.version);
+      console.log(data.results[0].login.uuid);
+
+        
+        
+    }
+        
+    }
+    xmr.send()
+</script>
+</html>
